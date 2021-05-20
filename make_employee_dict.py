@@ -21,7 +21,7 @@ class Employee:
         return self.__name
 
     def get_ID_number(self):
-        return self.__ID
+        return self.__ID_number
 
     def get_salary(self):
         return self.__salary
@@ -31,9 +31,11 @@ class Employee:
 
     # definite the function and add dictionary
 
-def make_employee_dict(emp_names, emp_ids, emp_sals, emp_emails):
+def make_employee_dict(name, ID_number, salary, email_adress):
     Employees = dict()
-    for i in range(len(emp_names)):
-        Employees[emp_ids[i]] = Employee(emp_names[i], emp_ids[i], emp_sals[i], emp_emails[i])
+    for i in range(len(name)):
+        Employees[ID_number[i]] = Employee(name[i], ID_number[i], salary[i], email_adress[i])
     return Employees
+
+
 
