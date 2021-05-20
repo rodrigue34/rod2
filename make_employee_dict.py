@@ -20,7 +20,7 @@ class Employee:
         return self.__name
 
     def get_ID_number(self):
-        return self.__ID_number
+        return self.__ID
 
     def get_salary(self):
         return self.__salary
