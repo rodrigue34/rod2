@@ -32,11 +32,8 @@ class Employee:
     # definite the function and add dictionary
 
 def make_employee_dict(emp_names, emp_ids, emp_sals, emp_emails):
-    employees = dict()
+    Employees = dict()
     for i in range(len(emp_names)):
-        employees[emp_ids[i]] = Employee(emp_names[i], emp_ids[i], emp_sals[i], emp_emails[i])
-    return employees
-
-
-
+        Employees[emp_ids[i]] = Employee(emp_names[i], emp_ids[i], emp_sals[i], emp_emails[i])
+    return Employees
 
