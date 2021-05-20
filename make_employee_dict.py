@@ -5,9 +5,9 @@
 class Employee:
 
     __ID_number = 0
-    __salary = 0
     __email_address = ''
-    __Employee_name = ''
+    __salary = 0
+    __employee_name = ''
 
     def __init__(self, name, ID_number, salary, email_address):
         self.__name = name
@@ -15,8 +15,7 @@ class Employee:
         self.__salary = salary
         self.__email_address = email_address
 
-    # Set the values of the data members of the class.
-
+        # definite the value data
     def get_name(self):
         return self.__name
 
@@ -29,13 +28,15 @@ class Employee:
     def get_email_address(self):
         return self.__email_address
 
-    # definite the function and add dictionary
+# definition and dictionary
+def make_employee_dict(emp_names, emp_ids, emp_sals, emp_emails):
+    employees = dict()
+    for i in range(len(emp_names)):
+        employees[emp_ids[i]] = Employee(emp_names[i], emp_ids[i], emp_sals[i], emp_emails[i])
+    return employees
 
-def make_employee_dict(name, ID_number, salary, email_adress):
-    Employees = dict()
-    for i in range(len(name)):
-        Employees[ID_number[i]] = Employee(name[i], ID_number[i], salary[i], email_adress[i])
-    return Employees
+
+
 
 
 
